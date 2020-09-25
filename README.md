@@ -4,7 +4,7 @@ This is a sample implementation of a simple subgraph of The Graph protocol. This
 
 In this specific example, we are indexing Kleros, which is a blockchain dispute resolution layer. The goal is to index and query disputes and phases. In this exercise, we want to ask a straightforward question that would be difficult to answer without The Graph protocol. For example, how many disputes exist per phase and which specific disputes exist per phase.
 
-## Contracts
+## The Graph Dashboard
 
 Below the graph dashboard of this sample implementation
 * [Subgraph dashboard](https://thegraph.com/explorer/subgraph/axeldomingues/kleros-sample?query=Disputes%20array%20per%20phase)
