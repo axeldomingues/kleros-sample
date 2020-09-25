@@ -1,5 +1,11 @@
-type ExampleEntity @entity {
-  id: ID!
-  count: BigInt!
-  _phase: Int! # uint8
+type Period @entity {
+  id: ID! # id is period here (period enum)
+  period: Int! # uint8 (period enum)
+  totalDisputes: BigInt! #uint256
+  disputes: [Dispute!] @derivedFrom(field: "period")
+}
+
+type Dispute @entity {
+  id: ID! # id is dispute ID
+  period: Period! # id is period here
 }
